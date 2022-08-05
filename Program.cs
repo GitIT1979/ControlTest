@@ -35,4 +35,19 @@ void GetThreeSymbolsMassive(string[] array)
         
 }
 
-
+Console.WriteLine("Input the first element of the string massive: ");
+string a = Console.ReadLine();
+Console.WriteLine("Input the second element of the string massive: ");
+string b = Console.ReadLine();
+Console.WriteLine("Input the third element of the string massive: ");
+string c = Console.ReadLine();
+Console.WriteLine("Input the fourth element of the string massive: ");
+string d = Console.ReadLine();
+Console.WriteLine("Input the fifth element of the string massive: ");
+string e = Console.ReadLine();
+string[] myArray = GetStringArray(a,b,c,d,e);
+PrintStringArray(myArray);
+Console.Write(" -> ");  
+Console.Write("[");
+GetThreeSymbolsMassive(myArray);
+Console.Write("]");
